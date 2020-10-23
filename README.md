@@ -1,5 +1,6 @@
 # R4Bass-Model（解法1.传统运算）
-
+<a href='https://github.com/rockpanda666/R4Bass-Model/blob/main/README.md#r4bass-model%E8%A7%A3%E6%B3%952%E4%BD%BF%E7%94%A8%E6%A8%A1%E5%9D%97'>点击跳转第二段<a/>
+ 
 ``` R
 q# exampleT79<-1:10Tdelt<-(1:100)/10Sales<-c(840,1470,2110,4000,7590,10950,10530,9470,7790,5890)Cusales<-cumsum(Sales)Bass.nls<-nls(Sales~M*(((P+Q)^2/P)*exp(-(P+Q)*T79))/(1+(Q/P)*exp(-(P+Q)*T79))^2,start=list(M=60630,P=0.03,Q=0.38))summary(Bass.nls)
  
